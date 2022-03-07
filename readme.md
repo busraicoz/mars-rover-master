@@ -1,9 +1,9 @@
 <h1 align="left"> Mars Rover Problem </h1>
 
 
-##Problem:
+Problem:
 
-Part 1
+- **Part 1**
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is
 curiously rectangular, must be navigated by the rovers so that their on board cameras can get a
 complete view of the surrounding terrain to send back to Earth.
@@ -27,9 +27,9 @@ until the first one has finished moving.
 Output:
 The output for each rover should be its final co-ordinates and heading.
 
-###Input and Output###
+Input and Output
 
-####Test Input:
+**Test Input:**
 
 - 5 5
 - 1 2 N
@@ -37,22 +37,25 @@ The output for each rover should be its final co-ordinates and heading.
 - 3 3 E
 - MMRMMRMRRM
 
-####Expected Output:
+**Expected Output:**
 
 - 1 3 N
 - 5 1 E
 
-##How To Run:
+**How To Run**
 
-- The project has been dockerized. In order to run the service, it is sufficient to call the **"docker-compose up"** command from the path of the project folder which include docker-compose.yaml.
-- It can also be run by MarsRoverApplication.java class. There are no need any environment variables.
-- Third option After the **"mvn clean package"** command **"java -jar marsrover-1.0.0.jar"** command can be used
+- The project has been dockerized. In order to run the service, following commands should be used for building and running.
+ -  For Image building: **"docker build -t marsrover:1.0.0 ."**
+ -  For Running: **"docker run -i -t marsrover:1.0.0"**
+
+- It can also be run by MarsRoverApplication.java which is main class. There are no need any environment variables.
+- Another option is first **"mvn clean package"** command should be run for packaging, After **"java -jar marsrover-1.0.0.jar"** command should be use.
 
 - Unit tests can be run with the **"mvn test"** command.
 
-##Technical Details
+**Technical Details**
 
 - The application was developed using Java 8.
 - Junit 4 was used for unit tests.
 - The application was built with maven.
-- The application was dockerized and a docker-compose.yml was written.
+- The application was dockerized and a Docker file was written.
