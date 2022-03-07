@@ -1,0 +1,7 @@
+version: "3"
+services:
+  mars-rover:
+    image: mars-rover:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
